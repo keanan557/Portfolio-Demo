@@ -1,0 +1,145 @@
+h2{
+  text-align: center;
+  text-decoration: underline;
+}
+
+/* nav */
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    color: white;
+  }
+  
+  .logo{
+    padding: 5px;
+  }
+
+  .logo img{
+    border-radius: 50px;
+    width: 45px;
+  }
+  
+  .navbar-links {
+    height: 100%;
+  }
+  
+  .navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-links li {
+    list-style: none;
+  }
+  
+  .navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+  }
+  
+  .navbar-links li a:hover{
+    color: #fff;
+  }
+
+  .navbar-links li:hover {
+    background-color: black;
+  }
+  
+  .toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+  }
+  
+  .toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #000;
+    border-radius: 10px;
+  }
+  
+  @media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+  
+    .toggle-button {
+        display: flex;
+    }
+  
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+  
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+  
+    .navbar-links ul li {
+        text-align: center;
+    }
+  
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+  
+    .navbar-links.active {
+        display: flex;
+    }
+  }
+
+  /* about */
+.about-section p{
+  border: 1px solid black;
+  padding: 20px;
+}
+
+/* work */
+.work-section .work-content{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 1rem;
+  padding: 20px;
+}
+
+.work-section .work-content div{
+  border: 1px solid black;
+  max-width: 250px;
+  height: 300px;
+}
+
+/* contact */
+.contact-section{
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  /* background-color: #000; */
+}
+
+.contact-section form{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  gap: 1rem;
+
+}
+
+.contact-section form button
+{
+  border-radius: 8px;
+}
+
